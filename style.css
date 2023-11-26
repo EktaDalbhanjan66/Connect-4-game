@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background-color: blueviolet;
+}
+
+.wrapper{
+    width:45rem;
+    background-color: aliceblue;
+    position:absolute;
+    padding:2rem;
+    transform: translate(50%);
+    margin-top: 2.5rem;
+    border-radius: 5px;
+    
+
+}
+.container{
+    width:35rem;
+    margin: 0.5rem auto;
+    background-color: blueviolet;
+    overflow: hidden;
+    border-radius: 10px; 
+}
+#information{
+   
+    display:grid;
+    width:100%;
+    grid-template-columns: 1fr 1fr;
+
+ 
+}
+.player-wrappers{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+.Player1:before{
+    content:"";
+    display: inline-block;
+    background-color:peru;
+    width:3rem;
+    height:3rem;
+    border-radius: 50%;
+    background: radial-gradient(peru 1.1rem,rgb(221, 174, 130) 1.25rem);
+
+}
+.Player2:before{
+    content:"";
+    display: inline-block;
+  
+    width:3rem;
+    height:3rem;
+    border-radius: 50%;
+    background: radial-gradient(rgb(191, 28, 123) 1.1rem,rgb(141, 31, 51) 1.25rem);
+
+}
+
+#playerturn{
+    text-align: right;
+}
+.startScreen{
+   position:absolute;
+   top:0;
+   height: 100vh;
+   width:100vw;
+   background-color: blueviolet;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+
+
+
+}
+#start{
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hide{
+    display:none;
+}
+.grid-row{
+margin:0 auto;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.grid-box{
+    height:5rem;
+    width:5rem;
+     display:grid;             /* not necessary */
+     place-items: center;
+    background: radial-gradient(white 1.3rem,blueviolet 1.4rem);
+    cursor: pointer;
+
+}
+#message{
+   
+    position:absolute;
+    color: whitesmoke;
+    margin-top: 6rem;
+    font-size: 35px;
+}
